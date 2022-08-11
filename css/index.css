@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #323238;
+    --bg-button-color: #E1E1E6;
+    --active-button-color: #02799D;
+
+    /* Dark Theme */
+    --bg-color-dark: #121214;
+    --bg-button-color-dark: #29292E;
+    --fill-color: #C4C4CC;
+    --active-button-color-dark: #0A3442;
+
+    font-size: 62.5%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timer span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.7rem;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.controls button svg {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.wrapper-button-sound {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+}
+
+.wrapper-button-sound button:nth-child(1) {
+    grid-column: 1/2;
+}
+
+.wrapper-button-sound button {
+    width: 13.8rem;
+    height: 15.2rem;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    
+    border: none;
+    border-radius: 24px;
+
+    cursor: pointer;
+}
+
+.wrapper-button-sound button svg {
+    position: absolute;
+    top: 24px;
+}
+
+.wrapper-button-sound button.active-button svg path {
+    fill: #FFFFFF;
+}
+
+.button-sound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.button-sound input {
+    position: absolute;
+    bottom: 24px;
+
+    -webkit-appearance: none;
+    width: 90px;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.button-sound input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.button-sound input.active-button,
+.button-sound input.active-button::-webkit-slider-thumb {
+    background-color: #FFFFFF;
+}
+
+.hide {
+    display: none;
+}
+
+.button-theme {
+    position: relative;
+}
+
+.theme-light, .theme-dark {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.theme-dark {
+    top: 64px;
+    right: 64px;
+}

@@ -1,0 +1,31 @@
+body.dark {
+    background-color: var(--bg-color-dark);
+}
+
+.timer span.dark {
+    color: #FFFFFF;
+}
+
+.controls.dark button svg path {
+    fill: var(--fill-color);
+}
+
+.wrapper-button-sound.dark button {
+    background-color: var(--bg-button-color-dark);
+}
+
+.wrapper-button-sound.dark button svg path {
+    fill: var(--fill-color);
+}
+
+.wrapper-button-sound.dark button.active-button {
+    background-color: var(--active-button-color-dark);
+}
+
+.button-sound.dark input {
+    background-color: #FFFFFF;
+}
+
+.button-sound.dark input::-webkit-slider-thumb {
+    background-color: #FFFFFF;
+}

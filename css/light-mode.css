@@ -1,0 +1,23 @@
+body {
+    background-color: #FFFFFF;
+}
+
+.timer span {
+    color: var(--primary-color);
+}
+
+.wrapper-button-sound button {
+    background-color: var(--bg-button-color);
+}
+
+.wrapper-button-sound button.active-button {
+    background-color: var(--active-button-color);
+}
+
+.button-sound input {
+    background-color: var(--primary-color);
+}
+
+.button-sound input::-webkit-slider-thumb {
+    background-color: var(--primary-color);
+}
